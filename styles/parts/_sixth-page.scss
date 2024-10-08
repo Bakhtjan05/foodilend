@@ -1,0 +1,69 @@
+.sixth-page {
+    width: 100%;
+    padding: 0px 80px;
+    margin-top: 160px;
+
+    header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        div:nth-child(1) {
+            width: 50%;
+
+            h1 {
+                width: 507px;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 58px;
+                letter-spacing: -0.04em;
+            }
+            
+        }
+        div:nth-child(2) {
+            width: 50%;
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: rgba(0, 0, 0, 0.6);
+
+            }
+            
+        }
+    } 
+
+    .more-meals {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 316px 316px;
+        gap: 40px;
+        margin-top: 60px;
+
+        .first-meal {
+           @include more-meals;
+        }
+        .second-meal {
+            @include more-meals;
+        }
+        .third-meal {
+            @include more-meals;
+        }
+        .fourth-meal {
+            @include more-meals;
+        }
+        .fifth-meal {
+            @include more-meals;
+        }
+        .sixth-meal {
+            @include more-meals;
+        }
+        .seventh-meal {
+            @include more-meals;
+        }
+        .eighth-meal {
+            @include more-meals;
+        }
+    }
+}

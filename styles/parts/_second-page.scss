@@ -1,0 +1,69 @@
+.second-page {
+    width: calc(100% - 160px);
+    height: 342px;
+    margin: 162px 80px 0px 80px;
+
+
+    header {
+        width: 100%;
+        height: 15%;
+        display: flex;
+        justify-content: space-between;
+
+        h1 {
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 58px;
+            letter-spacing: -0.04em;
+        }
+
+        button {
+            background: #E7FAFE;
+            border-radius: 16px;
+            border: none;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: -0.02em;
+            width: 200px;
+            height: 60px;
+        }
+    }
+
+    main {
+        width: 100%;
+        height: 85%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        gap: 10px;
+
+        div:nth-child(1) {
+            @include categories;
+            
+        }
+        div:nth-child(2) {
+            @include categories;
+            
+        }
+        
+        div:nth-child(3) {
+            @include categories;
+            
+        }
+        div:nth-child(4) {
+            @include categories;
+            
+        }
+        div:nth-child(5) {
+            @include categories;
+            
+        }
+        div:nth-child(6) {
+            @include categories;
+            
+        }
+    }
+    
+    
+}
